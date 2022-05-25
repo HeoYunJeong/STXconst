@@ -2,21 +2,21 @@ $(document).ready(function () {
 
 	// header Area
 	const header = $('.header');
-	const gnb = header.find('.gnb');
+	const nav = header.find('.nav');
 	const header_class = 'header_open';
 
-	gnb.mouseenter(function () {
+	nav.mouseenter(function () {
 		header.addClass(header_class);
 	});
-	gnb.mouseleave(function () {
+	nav.mouseleave(function () {
 		header.removeClass(header_class);
 	});
 
 	// move to business
-	$('.move-cate').click(function (e) {
+	$('.move-category').click(function (e) {
 		// event return
 		e.preventDefault();
-		let tg_y = $('.cate').offset().top;
+		let tg_y = $('.category').offset().top;
 		$('html, body').animate({
 			scrollTop: tg_y
 		});

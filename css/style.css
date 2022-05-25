@@ -43,7 +43,7 @@ body {
 }
 
 /*공통요소*/
-.pagew {
+.container {
     position: relative;
     display: block;
 
@@ -72,7 +72,7 @@ body {
     z-index: 9999999;
 }
 
-.modal-cont {
+.modal-contents {
     position: absolute;
     left: 50%;
     top:  50%;
@@ -86,7 +86,7 @@ body {
     padding:  50px;
 }
 
-.modal-cont p {
+.modal-contents p {
     position: relative;
     display: block;
     font-size: 24px;
@@ -97,7 +97,7 @@ body {
     margin-bottom: 50px;
 }
 
-.modal-cont span {
+.modal-contents span {
     position: relative;
     display: block;
     font-size: 16px;
@@ -107,7 +107,7 @@ body {
     color: #000;
 }
 
-.modal-cont button {
+.modal-contents button {
     position: relative;
     display: block;
     float: right;
@@ -176,7 +176,7 @@ body {
     background: url('../images/logo.png') no-repeat center;
 }
 
-.gnb {
+.nav {
     position: absolute;
     left: 0;
     top: 8rem;
@@ -188,13 +188,13 @@ body {
     text-align: center;
 }
 
-.depth1 {
+.nav-list {
     position: relative;
     display: inline-block;
     margin-top: -8rem;
 }
 
-.depth1>li {
+.nav-list >li {
     position: relative;
     display: block;
     float: left;
@@ -216,19 +216,19 @@ body {
     color: #ed1c24;
 }
 
-.depth2 {
+.nav-item {
     position: relative;
     display: block;
 
     padding: 40px 0;
 }
 
-.depth2>li {
+.nav-item >li {
     position: relative;
     display: block;
 }
 
-.depth2>li>a {
+.nav-item >li>a {
     position: relative;
     display: block;
     font-size: 1.5rem;
@@ -237,8 +237,8 @@ body {
     line-height: 3rem;
     text-align: left;
 }
-.depth2>li>a:hover {}
-.depth1>li:hover>.mainmenu {
+.nav-item >li>a:hover {}
+.nav-item >li:hover>.mainmenu {
     color: #ed1c24;
 }
 .lang {
@@ -341,7 +341,7 @@ body {
     margin-top: 4.5rem;
 }
 
-.move-cate {
+.move-category {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -357,7 +357,7 @@ body {
 }
 
 /*사업분야*/
-.cate {
+.category {
     position: relative;
     display: block;
 
@@ -365,7 +365,7 @@ body {
     padding-bottom: 13.5rem;
 }
 
-.cate-tit {
+.category-tit {
     position: relative;
     display: block;
     padding-bottom: 3rem;
@@ -376,7 +376,7 @@ body {
     line-height: 1;
 }
 
-.cate-tit:after {
+.category-tit:after {
     content: '';
     position: absolute;
     left: 50%;
@@ -388,7 +388,7 @@ body {
     background: #f00;
 }
 
-.cate-desc {
+.category-description {
     position: relative;
     display: block;
     margin-top: 2.5rem;
@@ -397,13 +397,13 @@ body {
     margin-bottom: 6.5rem;
 }
 
-.cate-list {
+.category-list {
     position: relative;
     display: block;
     overflow: hidden;
 }
 
-.cate-list>li {
+.category-list>li {
     position: relative;
     display: block;
     float: left;
@@ -413,27 +413,27 @@ body {
     background-position-Y: 0;
 }
 
-.cate-list>li:nth-child(1) {
+.category-list>li:nth-child(1) {
     background-position-X: 0;
 }
 
-.cate-list>li:nth-child(2) {
+.category-list>li:nth-child(2) {
     background-position-X: -24rem;
 }
 
-.cate-list>li:nth-child(3) {
+.category-list>li:nth-child(3) {
     background-position-X: -48rem;
 }
 
-.cate-list>li:nth-child(4) {
+.category-list>li:nth-child(4) {
     background-position-X: -72rem;
 }
 
-.cate-list>li:nth-child(5) {
+.category-list>li:nth-child(5) {
     background-position-X: -96rem;
 }
 
-.cate-list>li>a {
+.category-list>li>a {
     position: relative;
     display: block;
 
@@ -442,11 +442,11 @@ body {
     transition: background 0.3s;
 }
 
-.cate-list>li>a:hover {
+.category-list>li>a:hover {
     background: rgba(243, 127, 37, 1.0);
 }
 
-.cate-txt {
+.category-txt {
     position: relative;
     display: block;
     padding-top: 10rem;
@@ -456,7 +456,7 @@ body {
     font-weight: 100;
 }
 
-.cate-img {
+.category-img {
     position: relative;
     display: block;
     background: url('../images/bg_common.png') no-repeat;
@@ -467,40 +467,40 @@ body {
     transition: opacity 0.5s;
 }
 
-.cate-list>li>a:hover .cate-img {
+.category-list>li>a:hover .category-img {
     visibility: visible;
     opacity: 1.0;
 }
 
-.cate-list>li:nth-child(1) .cate-img {
+.category-list>li:nth-child(1) .category-img {
     width: 12.3rem;
     height: 11.2rem;
     background-position-x: -16.8rem;
     background-position-y: 0;
 }
 
-.cate-list>li:nth-child(2) .cate-img {
+.category-list>li:nth-child(2) .category-img {
     width: 12.3rem;
     height: 11.2rem;
     background-position-x: -30.1rem;
     background-position-y: 0;
 }
 
-.cate-list>li:nth-child(3) .cate-img {
+.category-list>li:nth-child(3) .category-img {
     width: 13rem;
     height: 10.6rem;
     background-position-x: 0;
     background-position-y: -12.2rem;
 }
 
-.cate-list>li:nth-child(4) .cate-img {
+.category-list>li:nth-child(4) .category-img {
     width: 13rem;
     height: 11.1rem;
     background-position-x: -14rem;
     background-position-y: -12.2rem;
 }
 
-.cate-list>li:nth-child(5) .cate-img {
+.category-list>li:nth-child(5) .category-img {
     width: 10.2rem;
     height: 10.5rem;
     background-position-x: -28rem;
@@ -642,7 +642,7 @@ body {
     margin-bottom: 2.2rem;
 }
 
-.cs-desc {
+.cs-description {
     position: relative;
     display: block;
     font-size: 1.5rem;
@@ -673,7 +673,7 @@ body {
     overflow: hidden;
 }
 
-.about-cont {
+.about-contents {
     padding-top: 4rem;
 }
 
@@ -705,7 +705,7 @@ body {
     background: #ed1c24;
 }
 
-.about-desc {
+.about-slogan {
     position: relative;
     display: block;
     font-size: 2.1rem;
@@ -715,7 +715,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.about-txt {
+.about-description {
     position: relative;
     display: block;
     font-size: 1.5rem;
@@ -771,20 +771,20 @@ body {
     padding: 5rem 0;
 }
 
-.f-left {
+.footer-left {
     position: relative;
     display: block;
     float: left;
     width: 26rem;
 }
 
-.f-right {
+.footer-right {
     position: relative;
     display: block;
     float: left;
 }
 
-.f-txt {
+.footer-txt {
     position: relative;
     display: block;
     white-space: nowrap;
@@ -795,6 +795,6 @@ body {
     font-style: normal;
 }
 
-.f-right .f-txt:last-child {
+.footer-right .footer-txt:last-child {
     margin-bottom: 0;
 }

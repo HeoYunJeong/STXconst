@@ -7,41 +7,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STX 건설</title>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
-    <![endif]-->
+        <![endif]-->
+
+    <!-- 스크립트 -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
-    <script src="js/respond.min.js"></script> 
+    <script src="js/respond.min.js"></script>
+
+    <!-- 스타일시트 -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 
 <body>
+
     <!-- 안내창 -->
     <div class="modal">
-        <div class="modal-cont">            
+        <div class="modal-contents">
             <p>
                 본 사이트는 포트폴리오용 사이트로 <br>
-                리소스는 원저작자에게 있습니다.                
+                리소스는 원저작자에게 있습니다.
             </p>
             <span>HTML5, CSS3, javaScript & jQuery로 제작되었으며,
                 크롬에 최적화 되어있습니다.</span>
-
             <button>닫기</button>
         </div>
     </div>
+    <!-- //안내창 -->
+
     <div class="wrap">
         <!-- 상단 -->
         <header class="header">
             <div class="header-bg"></div>
             <a href="#" class="logo" alt="STX 건설"></a>
-            <div class="gnb">
-                <ul class="depth1">
+            <!-- 메뉴 -->
+            <div class="nav">
+                <ul class="nav-list">
                     <li>
                         <a href="#" class="mainmenu">회사소개</a>
-                        <ul class="depth2">
+                        <ul class="nav-item">
                             <li><a href="#">인사말</a></li>
                             <li><a href="#">STX건설</a></li>
                             <li><a href="#">기업문화</a></li>
@@ -54,7 +60,7 @@
                     </li>
                     <li>
                         <a href="#" class="mainmenu">사업분야</a>
-                        <ul class="depth2">
+                        <ul class="nav-item">
                             <li><a href="#">건축사업</a></li>
                             <li><a href="#">주택사업</a></li>
                             <li><a href="#">토목사업</a></li>
@@ -64,7 +70,7 @@
                     </li>
                     <li>
                         <a href="#" class="mainmenu">사회공헌</a>
-                        <ul class="depth2">
+                        <ul class="nav-item">
                             <li><a href="#">나눔의생각</a></li>
                             <li><a href="#">주요활동분야</a></li>
                             <li><a href="#">활동현황</a></li>
@@ -72,7 +78,7 @@
                     </li>
                     <li>
                         <a href="#" class="mainmenu">홍보센터</a>
-                        <ul class="depth2">
+                        <ul class="nav-item">
                             <li><a href="#">홍보동영상</a></li>
                             <li><a href="#">홍보브로슈어</a></li>
                             <li><a href="#">STX건설뉴스</a></li>
@@ -80,14 +86,14 @@
                     </li>
                     <li>
                         <a href="#" class="mainmenu">고객지원</a>
-                        <ul class="depth2">
+                        <ul class="nav-item">
                             <li><a href="#">자주묻는질문</a></li>
                             <li><a href="#">고객문의</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="mainmenu">채용정보</a>
-                        <ul class="depth2">
+                        <ul class="nav-item">
                             <li><a href="#">채용안내</a></li>
                             <li><a href="#">채용공고</a></li>
                             <li><a href="#">채용FAQ</a></li>
@@ -95,71 +101,80 @@
                     </li>
                 </ul>
             </div>
+            <!-- //메뉴 -->
+
             <div class="lang">
                 <ul class="lang-list">
                     <li><a href="#">eng</a></li>
                     <li><a href="#" class="lang-focus">kor</a></li>
                 </ul>
             </div>
+
         </header>
-        <!-- 비주얼 -->
+        <!-- //상단 -->
+
+        <!-- 메인 비주얼 -->
         <section class="visual">
-            <div class="pagew">
+            <div class="container">
                 <p class="visual-tit">
                     <span>BEST OF THE WORLD</span>
                     <span>STX Engineering & Construction</span>
                 </p>
                 <span class="visual-txt">세계최고를 향해 STX건설이 힘차게 질주합니다!</span>
             </div>
-            <a href="#part" class="move-cate">
+            <a href="#part" class="move-category">
                 사업파트이동
             </a>
         </section>
+        <!-- // 메인 비주얼 -->
+
         <!-- 사업분야 -->
-        <section class="cate" id="part">
-            <div class="pagew">
-                <h2 class="cate-tit">STX Engineering & Construction Business</h2>
-                <p class="cate-desc">
+        <section class="category" id="part">
+            <div class="container">
+                <h2 class="category-tit">STX Engineering & Construction Business</h2>
+                <p class="category-description">
                     STX건설은 건문 역량 강화를 통해 건축, 주택, 토목, 플랜트 사업 영역에서 <br>
                     탁월한 성과를 인정받은 기업으로 자연과 기술의 공간에 인류의 가치를 추구합니다.
                 </p>
-                <ul class="cate-list">
+                <ul class="category-list">
                     <li>
                         <a href="#">
-                            <span class="cate-txt">건축사업</span>
-                            <span class="cate-img"></span>
+                            <span class="category-txt">건축사업</span>
+                            <span class="category-img"></span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span class="cate-txt">주택사업</span>
-                            <span class="cate-img"></span>
+                            <span class="category-txt">주택사업</span>
+                            <span class="category-img"></span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span class="cate-txt">토목사업</span>
-                            <span class="cate-img"></span>
+                            <span class="category-txt">토목사업</span>
+                            <span class="category-img"></span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span class="cate-txt">플랜트/공작기계사업</span>
-                            <span class="cate-img"></span>
+                            <span class="category-txt">플랜트/공작기계사업</span>
+                            <span class="category-img"></span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span class="cate-txt">해외사업</span>
-                            <span class="cate-img"></span>
+                            <span class="category-txt">해외사업</span>
+                            <span class="category-img"></span>
                         </a>
                     </li>
                 </ul>
             </div>
         </section>
+        <!-- //사업분야 -->
+
         <!-- 게시판 -->
         <section class="board">
-            <div class="pagew">
+            <div class="container">
                 <div class="board-box">
                     <h3>공지사항</h3>
                     <ul class="board-list">
@@ -208,37 +223,41 @@
                 </div>
             </div>
         </section>
+        <!-- //게시판 -->
+
         <!-- 고객센터 -->
         <section class="cs">
-            <div class="pagew">
+            <div class="container">
                 <div class="cs-box cs-bg-1">
                     <h3 class="cs-tit">FAQ</h3>
-                    <p class="cs-desc">
+                    <p class="cs-description">
                         STX건설 고객님들을 위해<br>
                         자주하시는 질문과 답변을 정리하였습니다.
                     </p>
                 </div>
                 <div class="cs-box cs-bg-2">
                     <h3 class="cs-tit">고객문의</h3>
-                    <p class="cs-desc">
+                    <p class="cs-description">
                         STX건설 고객상담은 고객만족<br>
                         서비스를 위하여 최선을 다하고 있습니다.
                     </p>
                 </div>
             </div>
         </section>
-        <!-- About -->
+        <!-- //고객센터 -->
+
+        <!-- 어바웃 -->
         <section class="about">
-            <div class="pagew">
+            <div class="container">
                 <div class="about-top clearfix">
-                    <div class="about-cont">
+                    <div class="about-contents">
                         <h2 class="about-tit">ABOUT US</h2>
                         <div class="about-box">
-                            <h3 class="about-desc">
+                            <h3 class="about-slogan">
                                 고객의 믿음과 신뢰로 성장하는 <br>
                                 STX건설이 되겠습니다.
                             </h3>
-                            <p class="about-txt">
+                            <p class="about-description">
                                 STX건설 이름으로 세계 어디에서, 세계 누구와 겨뤄도 <br>
                                 자신 있는 세계 최고를 향해 웅비합니다. STX건설이라는 날개를 <br>
                                 하나 더 피고 세계로, 미래로 나아가는 STX건설의 힘찬 비상을 주목해 <br>
@@ -256,26 +275,31 @@
                 </div>
             </div>
         </section>
+        <!-- //어바웃 -->
+
         <!-- 하단 -->
         <footer class="footer">
-            <div class="pagew clearfix">
-                <div class="f-left">
+            <div class="container clearfix">
+                <div class="footer-left">
                     <img src="images/logo_footer.png" alt="STX건설">
                 </div>
-                <div class="f-right">
-                    <address class="f-txt">
+                <div class="footer-right">
+                    <address class="footer-txt">
                         부산사무소 : (48059) 부산 해운대구 센텀동로 49(우동) 아이피파빌리온 8층 · TEL : 051-791-3000 · FAX : 051-791-3099
                     </address>
-                    <address class="f-txt">
+                    <address class="footer-txt">
                         창원사무소 : (51494) 경상남도 창원시 성산구 중앙대로 84번길 3, 9층904호 · TEL : 055-263-2060 · FAX : 055-263-2087
                     </address>
-                    <span class="f-txt">
+                    <span class="footer-txt">
                         Copyright ⓒ 2018 STX CONSTRUCTION. LTD. All Rights Reserved.
                     </span>
                 </div>
             </div>
         </footer>
     </div>
+    <!-- //하단 -->
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
